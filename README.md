@@ -1,4 +1,4 @@
-# Nom final de la formation
+# Essentiel du R
 
 Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
