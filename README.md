@@ -1,6 +1,6 @@
-# Essentiel du R
+# L'essentiel de R
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L'essentiel de R`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
 
@@ -27,7 +27,7 @@ La branche master correspond au code à la fin de la formation.
 
 ### Formateur
 
-**Nom du formateur** 
+**Vincent Terrasi** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
