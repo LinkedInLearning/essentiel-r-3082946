@@ -2,16 +2,17 @@
 
 # maitriser les 4 zones
 
-# utilisation de la console
-ls()
+getwd()
 
+# utilisation de la console
 a <- "Sherlock"
 b <- "Moriaty"
+
+ls()
+
 rm(b)
 
 ls()
-
-#getwd()
 
 #
 list.files()
