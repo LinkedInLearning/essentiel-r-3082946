@@ -10,7 +10,7 @@
 # log(6.38, base=exp(1))
 # pi
 # 15 %/% 4
-# fact() -> package
+# factorial()
 
 
 
