@@ -5,10 +5,10 @@
 a <- 5
 
 # pas clair si chiffre négatif
-a <--5
+b <--5
 
 # il existe le =
-a = 6
+b = 6
 
 # vairable algebrique complexe
 x <- 3 + 2i
