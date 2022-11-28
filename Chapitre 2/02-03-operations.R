@@ -1,4 +1,4 @@
-# Découverte de tous les opérateurs mathématiques disponibles et les opérateurs logiques
+# Découverte de tous les opérateurs mathématiques disponibles
 
 # addition
 # soustraction
