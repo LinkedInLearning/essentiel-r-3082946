@@ -15,7 +15,7 @@ x <- 3 + 2i
 
 #Re(x)
 #Im(x)
-#x+x : somme de  2 nombres, diviion, multiplication
+#x+x : somme de  2 nombres, division, multiplication
 
 z <- complex(real=3, imaginary = 2)
 # argument obligatoire
