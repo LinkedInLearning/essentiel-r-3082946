@@ -2,21 +2,21 @@
 
 ### Exercice 1
 
-# Create a new RStudio project with the name `sherlock-holmes`.
+# Créer un nouveau projet RStudio avec le nom `sherlock-holmes`.
 
 ### Exercice 2
 
-# Create a new R script with the name `sherlock-holmes.R`.
+# Créez un nouveau script R avec le nom `sherlock-holmes.R`.
 
 ### Exercice 3
 
-# Create a new R Markdown document with the name `sherlock-holmes.Rmd`.
+# Créez un nouveau document R Markdown avec le nom `sherlock-holmes.Rmd`.
 
 ### Exercice 4
 
-# Create a new R Markdown document with the name `sherlock-holmes.Rmd` and the output format `pdf_document`.
+# Créez un nouveau document R Markdown avec le nom `sherlock-holmes.Rmd` et le format de sortie `pdf_document`.
 
-# Add the following code in the YAML header:
+# Ajoutez le code suivant dans l'en-tête YAML :
   
 ```
 title: "Sherlock Holmes"
