@@ -8,5 +8,7 @@
 
 # Créez un nouveau script R avec le nom `sherlock-holmes.R`.
 
+### Exercice 3
 
+# Créez un nouveau document R Markdown avec le nom `sherlock-holmes.Rmd`.
 
