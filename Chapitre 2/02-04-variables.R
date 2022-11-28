@@ -1,12 +1,5 @@
 # Apprendre à créer des variables en R , à les effacer et à faire des opérations
 
-# https://cran.r-project.org/doc/contrib/Goulet_introduction_programmation_R.pdf
-
-#Tout dans le langage R est un objet : les variables contenant des données,
-#les fonctions, les opérateurs, même le symbole représentant le nom d’un
-#objet est lui-même un objet. Les objets possèdent au minimum un mode et
-#une longueur et certains peuvent être dotés d’un ou plusieurs attributs
-
 # variable algébriqe scalaire
 # affecter une valeur 
 a <- 5
