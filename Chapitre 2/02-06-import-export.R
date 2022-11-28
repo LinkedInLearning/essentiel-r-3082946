@@ -11,35 +11,26 @@
 #Les fichiers .RData sont écrits dans le répertoire du projet. 
 #La session R est terminée.
 
-# To load the data again
-load("data.RData")
+# Charger les données
+load("sherlock.RData")
 
 ### Doc
-### Import the file "sherlock_holmes.txt"
 url <- "https://www.gutenberg.org/files/48320/48320-0.txt"
 page_txt <- readLines(url)
 page_txt[0:500]
 
-
 ### Doc
-### Import the file "sherlock_holmes.html"
 library(rvest)
 url <- "https://en.wikipedia.org/wiki/Sherlock_Holmes"
-
-# Extract the text from the file
 page_html <- read_html(url)
 
-
-### Import the file "sherlock_holmes.pdf"
-url <- "https://sherlock-holm.es/stories/pdf/a4/1-sided/cano.pdf"
-
+### 
+url <- "https://sherlock-holm.es/stories/pdf/a4/1-sided/advs.pdf"
 library(pdftools)
 page_pdf <- pdftools::pdf_text(pdf = url)
 page_pdf[30]
 
-
 ####
-# Save multiple objects
 save(page_txt, page_html,page_pdf , file = "sherlock.RData")
 
 
