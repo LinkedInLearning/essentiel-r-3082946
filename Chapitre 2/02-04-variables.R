@@ -10,30 +10,25 @@ b <--5
 # il existe le =
 b = 6
 
-# vairable algebrique complexe
-x <- 3 + 2i
-
+# variable algebrique complexe
+z <- complex(real=3, imaginary = 2)
 #Re(x)
 #Im(x)
-#x+x : somme de  2 nombres, division, multiplication
-
-z <- complex(real=3, imaginary = 2)
-# argument obligatoire
+#x+x : somme, division, multiplication
 
 # mod(z) : module
 # arg(z) : angle
 # conj(z) : conjugué complexe
 
-#Create a variable `sherlock` with the value `"Sherlock Holmes"`
+#Créer une variable `sherlock` avec la valeur `"Sherlock Holmes"`.
 
-#Create a variable `watson` with the value `"Dr. Watson"`
+#Créer une variable `watson` avec la valeur `"Dr. Watson"`
 
-#Create a variable `sherlock_watson` with the value `"Sherlock Holmes and Dr. Watson"`
-
+#Créer une variable `sherlock_watson` ayant pour valeur `Sherlock Holmes et Dr. Watson`.
 
 ## Pour obtenir la longueur de la chaîne, il faut utiliser
-## nchar().
-nchar(x)
+## nchar()
+
 
 
 
