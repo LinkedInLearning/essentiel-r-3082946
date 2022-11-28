@@ -22,10 +22,12 @@ library(ggraph)
 
 # Accès à la documentation d'un package
 
-library(gutenbergr)
-library(dplyr, warn.conflicts = FALSE)
-library(stringr)
+# install.packages("devtools")
+# devtools::install_github("ropensci/gutenbergr")
 
+library(gutenbergr)
+library(dplyr)
+library(stringr)
 
 # Notre test 
 book <- gutenberg_download(13795)
