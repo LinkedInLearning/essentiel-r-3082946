@@ -1,27 +1,28 @@
 # Se familiariser avec les packages {dplyr} et {tidyr} pour manipuler et nettoyer les données
 
-
 # Charger les packages
 library(dplyr)
 library(tidyr)
 
 # Charger les données
-data <- read.csv("sherlock-holmes-train.csv", header = TRUE, sep = ";")
+quartier_londres <- read_delim("quartier-londres.csv", 
+                               delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
 
 # Afficher les données
-head(data)
+head(quartier_londres,2)
 
 # Afficher les dimensions des données
-dim(data)
+dim(quartier_londres)
 
 # Afficher les noms des variables
-names(data)
+names(quartier_londres)
 
 # Afficher les types des variables
-str(data)
+str(quartier_londres)
 
 # Afficher les statistiques descriptives
-summary(data)
+summary(quartier_londres)
 
 
 # dplyr
@@ -33,28 +34,21 @@ xlsx <- read_excel("Breakout-Puzzle.xlsx", sheet = "Step 1", skip=9)
 library(dplyr)
 solver <- filter(xlsx,Digits==5)
 solver
-# R A Q TG
 
 # tidyr
 
 # Des données sont considérées comme tidy si :
 # chaque ligne correspond à une observation
 # chaque colonne correspond à une variable
-# chaque valeur est présente dans une unique case de la table
-
 
 # pivot_wider() : transformer des lignes en colonnes
-
 library(tidyr)
 library(dplyr)
 
-joueurs <- data.frame(
-  dé = c('Force', 'Dextérité', 'Endurance'),
-  a = c(10, 5, 1),
-  b = c(4, 8, 7),
-  c = c(7, 8, 9)
-)
+us_rent_income2 <- us_rent_income
 
-
-joueurs2 <- joueurs %>% pivot_wider(names_from = dé, values_from = c(a, b, c))
-
+us_rent_income3 <-
+  pivot_wider(us_rent_income,
+    names_from = variable,
+    values_from = c(estimate, moe)
+  )
