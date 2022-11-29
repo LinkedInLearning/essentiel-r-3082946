@@ -11,13 +11,15 @@ b <- c(1,2,3,4,5)
 c <- matrix(c(1,2,3,4,5,6,7,8,9), nrow = 3, ncol = 3)
 
 # data frame
-d <- data.frame(x = c(1,2,3,4,5), y = c(1,2,3,4,5))
+d <- data.frame(x = c(1,2,3,4,7), y = c('Sherlock','Moriaty','Watson','Huddson','Hilary'))
 
 # list
-e <- list(a = 1, b = 2, c = 3)
+e <- list(a = 1, b = 2, c = 'Test')
 
 # factor
-f <- factor(c("a", "b", "c", "a", "b", "c"))
+f <- factor(c("M", "F", "F", "M", "M", "F"))
+attributes(f)
+levels(f)
 
 # array
 g <- array(c(1,2,3,4,5,6,7,8,9), dim = c(3,3))
@@ -33,5 +35,6 @@ suspects <- read_csv(
     eggs_laid = col_integer(),
     motto     = col_character()
   )
+)
 )
 
