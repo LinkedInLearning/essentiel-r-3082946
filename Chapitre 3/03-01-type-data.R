@@ -1,6 +1,5 @@
 # Comprendre les types de donnés et déterminer si chaque colonne est une date, une valeur numérique, un texte…
 # pas seulement des scalaires, on peut mettre des objets
-# citer tous les types de données
 
 # scalar
 a <- 1
