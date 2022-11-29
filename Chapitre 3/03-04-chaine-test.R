@@ -19,7 +19,7 @@ str_pad(x, 20, "both")
 
 # str_trim()
   
-x <- c("  indice1   ", "indice2   ",  "   indice3")
+x <- c("  indice1   ", "indice2   ",  "     indice3")
 str_trim(x)
 
 str_trim(x, "left")
@@ -45,16 +45,15 @@ str_to_title(x)
 str_to_lower(x)
 
 
-# str_order
+# str_sort
 x <- c("y", "i", "k")
-str_order(x)
 
 str_sort(x)
 
 
 #Pattern matching
 strings <- c(
-    "apple", 
+    "Elementaire 11/2022", 
     "219 733 8965", 
     "329-293-8753", 
     "Travail: 579-499-7527; Maison: 543.355.3679"
