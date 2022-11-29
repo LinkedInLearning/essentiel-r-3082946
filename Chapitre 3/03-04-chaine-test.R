@@ -16,11 +16,11 @@ toupper(perso3)
 nchar(perso3)
 
 # 4 grep()
-grep('v', perso3)
+grep('s', perso3)
 
 # 5 paste() et paste0()
 paste0('sherlock','holmes')
-paste('sherlock','holmes')
+paste('sherlock','holmes', sep="-")
 
 # 6 sub() and gsub()
 sub('e','u',perso3)
