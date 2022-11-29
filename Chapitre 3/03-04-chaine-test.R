@@ -6,23 +6,16 @@ str_length("Dr Watson")
 
 
 x <- c("Sherlock Holmes", "Dr Watson")
-
-str_sub(x, 4, 5)
+str_sub(x, 4, 6)
 
 
 # str_pad() 
-x <- c("abc", "defghi")
-str_pad(x, 10) # default pads on left
+x <- c("Elementaire", "Elementaire, mon cher Watson")
+str_pad(x, 20) # default pads on left
 
-str_pad(x, 10, "both")
+str_pad(x, 20, "both")
 
 #######
-
-x <- c("Elementaire", "Elementaire, mon cher watson")
-
-x <- str_trunc(x, 10)
-x <- str_pad(x, 10, "right")
-
 
 # str_trim()
   
@@ -90,4 +83,4 @@ str_replace_all(strings, phone, "XXX-XXX-XXXX")
 # str_split_fixed()
 str_split("a-b-c", "-")
 
-str_split_fixed("a-b-c", "-", n = 2)
+
