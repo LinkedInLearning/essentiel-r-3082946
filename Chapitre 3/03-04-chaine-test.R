@@ -1,30 +1,93 @@
-# Introduction sur les chaines de caractères et leurs utilisations en R
-# Dans le package base
+# Découverte des fonctions disponibles avec le package stringr et mise en pratique sur des données réelles
 
-# 1 is.character() and as.character()
-perso <- 1
-is.character(perso)
+library(stringr)
 
-perso2 <- as.character(perso)
-is.character(perso2)
+str_length("Dr Watson")
 
-# 2 tolower() and toupper()
-perso3 <- "sherlock holmes"
-toupper(perso3)
 
-# 3 nchar()
-nchar(perso3)
+x <- c("Sherlock Holmes", "Dr Watson")
 
-# 4 grep()
-grep('s', perso3)
+str_sub(x, 4, 5)
 
-# 5 paste() et paste0()
-paste0('sherlock','holmes')
-paste('sherlock','holmes', sep="-")
 
-# 6 sub() and gsub()
-sub('e','u',perso3)
-gsub('e','u',perso3)
+# str_pad() 
+x <- c("abc", "defghi")
+str_pad(x, 10) # default pads on left
 
-# 7 substr()
-substr(perso3,1,5)
+str_pad(x, 10, "both")
+
+#######
+
+x <- c("Elementaire", "Elementaire, mon cher watson")
+
+x <- str_trunc(x, 10)
+x <- str_pad(x, 10, "right")
+
+
+# str_trim()
+  
+x <- c("  indice1   ", "indice2   ",  "   indice3")
+str_trim(x)
+
+str_trim(x, "left")
+
+
+# str_wrap() 
+
+quote <- str_c(
+  "`Lorsque vous avez éliminé l'impossible,   ",
+  "ce qui reste, ",
+  "si improbable soit-il, ",
+  "est nécessairement la vérité. "
+)
+
+cat(str_wrap(quote, width = 20))
+
+
+x <- "Nos idées doivent être aussi vastes que la nature pour pouvoir en rendre compte."
+str_to_upper(x)
+
+str_to_title(x)
+
+str_to_lower(x)
+
+
+# str_order
+x <- c("y", "i", "k")
+str_order(x)
+
+str_sort(x)
+
+
+#Pattern matching
+strings <- c(
+    "apple", 
+    "219 733 8965", 
+    "329-293-8753", 
+    "Travail: 579-499-7527; Maison: 543.355.3679"
+  )
+phone <- "([2-9][0-9]{2})[- .]([0-9]{3})[- .]([0-9]{4})"
+
+str_detect(strings, phone)
+
+str_subset(strings, phone)
+
+str_count(strings, phone)
+
+
+# str_extract()
+str_extract(strings, phone)
+
+str_extract_all(strings, phone)
+
+
+# str_replace()
+str_replace(strings, phone, "XXX-XXX-XXXX")
+
+str_replace_all(strings, phone, "XXX-XXX-XXXX")
+
+
+# str_split_fixed()
+str_split("a-b-c", "-")
+
+str_split_fixed("a-b-c", "-", n = 2)
