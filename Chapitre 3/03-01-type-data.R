@@ -26,7 +26,7 @@ g <- array(c(1,2,3,4,5,6,7,8,9), dim = c(3,3))
 
 ######
 # on peut specifier le format de chaque colonne
-supects <- read_csv(
+suspects <- read_csv(
   readr_example("chickens.csv"),
   col_types = cols(
     chicken   = col_character(),
