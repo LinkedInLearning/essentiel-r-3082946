@@ -1,6 +1,5 @@
 # Découverte des exports de graphiques en mode manuel ou automatique
 
-
 library(dslabs)
 data(murders)
 
@@ -8,7 +7,7 @@ r <- murders %>%
   summarize(rate = sum(total) /  sum(population) * 10^6) %>%
   pull(rate)
 
-plot <- murders |> ggplot(aes(population/10^6, total, label = abb)) +   
+plot <- ggplot(murders, aes(population/10^6, total, label = abb)) +   
   geom_abline(intercept = log10(r), lty = 2, color = "darkgrey") +
   geom_point(aes(col=region), size = 3) +
   geom_text_repel() + 
@@ -32,7 +31,6 @@ ggsave("mon_graph.png", plot, width=10, height=10, units="in")
 
 
 ### Exporter les graphiques en pdf :
-
 
 pdf("mon_graph.pdf")
 plot
