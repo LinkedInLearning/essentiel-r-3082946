@@ -10,30 +10,37 @@ infos <- data.frame(
 
 ##########
 ggplot(infos) +
-  aes(x = name, y = outcome) +
+  aes(x = name, y = motive) +
   geom_bar(stat = "identity") +
-  facet_wrap(~ weapon)
+  facet_wrap(~ weapon) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 
 ##########
 ggplot(infos) +
   aes(x = name, y = motive) +
   geom_bar(stat = "identity", fill = "blue") +
-  facet_grid(weapon ~ .)
+  facet_grid(~ weapon ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 
 ##########
 ggplot(infos) +
   aes(x = name, y = motive) +
   geom_bar(stat = "identity", fill = "blue") +
-  facet_wrap(~ weapon, scales = "free")
+  facet_wrap(~ weapon, scales = "free") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 
 ##########
 ggplot(infos) +
   aes(x = name, y = motive) +
   geom_bar(stat = "identity", fill = "blue") +
-  facet_wrap(~ weapon, scales = "free", ncol = 1, dir = "h")
+  facet_wrap(~ weapon, scales = "free") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Qui sont les personnages ?") +
+  xlab("Personnages") +
+  ylab("Source de motivation")
 
 
 
