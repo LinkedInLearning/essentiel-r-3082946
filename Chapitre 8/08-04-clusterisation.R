@@ -1,10 +1,8 @@
 # Mise en application concrête avec l'utilisation de kmeans et ggplot
 
-library(tidyverse)
 library(cluster)
 library(factoextra)
 library(gridExtra)
-
 
 d_frame <- read_delim("perso-potter-vs-sherlock.csv", 
                                        delim = ";", escape_double = FALSE, trim_ws = TRUE)
@@ -47,6 +45,8 @@ plot3 <- fviz_cluster(kmeans4, geom = "point", data = d_frame_scaled) + ggtitle(
 plot4 <- fviz_cluster(kmeans5, geom = "point", data = d_frame_scaled) + ggtitle("k = 5")
 grid.arrange(plot1, plot2, plot3, plot4, nrow = 2)
 
+# kmeans 4 ou 5 sont intéressants -> 5 et le groupe 3
+
 # Extraire les points et expliquer les données
 print(kmeans5)
 
@@ -54,9 +54,6 @@ print(kmeans5)
 aggregate(d_frame, by=list(cluster=kmeans5$cluster), mean)
 
 # Ajouter l'info cluster dans le jeu de donnée original
-dd <- cbind(d_frame, cluster = kmeans5$cluster)
-head(dd)
-
-# cluster 3 est intéressant
+df_frame_cluster <- cbind(d_frame, cluster = kmeans5$cluster)
 
 
