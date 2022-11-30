@@ -1,4 +1,4 @@
-# Série d'exemples pour comprendre le champ des possibles et mise en place d'un TP sur des données marketing
+# Série d'exemples pour comprendre le champ des possibles
 
 library(ggplot2)
 
