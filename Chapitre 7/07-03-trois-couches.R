@@ -1,5 +1,7 @@
 # Explication sur les 3 couches principales de ggplot et tests pratiques sur chacune des couches.
 
+# https://r-graph-gallery.com/index.html
+
 personnages <- data.frame(name = c("Sherlock Holmes", "Dr. Watson", "Inspector Lestrade", "Mrs. Hudson", "Mycroft Holmes", "Irene Adler", "Professor Moriarty", "Mary Morstan", "James Phillimore", "Charles Augustus Milverton"),
                           age = c(42, 35, 45, 60, 47, 30, 50, 25, 40, 50),
                           gender = c("Homme", "Homme", "Homme", "Femme", "Homme", "Femme", "Homme", "Femme", "Homme", "Homme"),
