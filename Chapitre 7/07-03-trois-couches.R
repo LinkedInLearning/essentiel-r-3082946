@@ -6,15 +6,20 @@ personnages <- data.frame(name = c("Sherlock Holmes", "Dr. Watson", "Inspector L
                           profession = c("Détective", "Médecin", "Police", "Propriétaire", "Fonctionnaire", "Chanteur d'opéra", "Mathématicien", "Veuve", "Banquier", "Maître chanteur"),
                           nationality = c("British", "British", "British", "British", "British", "American", "British", "British", "British", "British"))
 
+
 # Exemple 1 :
-ggplot(data = personnages, aes(x = factor(gender), fill = factor(gender))) +
+ggplot(data = personnages, aes(x = factor(gender))) + 
   geom_bar()
 
 # Exemple 2 :
-ggplot(data = personnages, aes(x = factor(gender), fill = factor(nationality))) +
+ggplot(data = personnages, aes(x = factor(gender), fill = factor(gender))) +
   geom_bar()
 
 # Exemple 3 :
+ggplot(data = personnages, aes(x = factor(gender), fill = factor(nationality))) +
+  geom_bar()
+
+# Exemple 4 :
 ggplot(data = personnages, aes(x = factor(nationality), fill = factor(gender))) +
   geom_bar() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
