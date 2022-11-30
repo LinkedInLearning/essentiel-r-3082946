@@ -19,9 +19,10 @@ ggplot(data = personnages, aes(x = factor(nationality), fill = factor(gender))) 
   geom_bar() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   coord_flip() +
-  ggtitle("Who are these people?") +
-  xlab("Nationality") +
-  ylab("Number of people")
+  ggtitle("Qui sont les personnages ?") +
+  xlab("Nationalité") +
+  ylab("Nombre de personnes") +
+  guides(fill=guide_legend(title="Couleur"))
 
 
 ### Contrôle des objets géométriques
@@ -29,10 +30,12 @@ ggplot(data = personnages, aes(x = factor(nationality), fill = factor(gender))) 
   geom_bar() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   coord_flip() +
-  ggtitle("Who are these people?") +
-  xlab("Nationality") +
-  ylab("Number of people") +
-  scale_fill_manual(values = c("#8dd3c7", "#feffb3"))
+  ggtitle("Qui sont les personnages ?") +
+  xlab("Nationalité") +
+  ylab("Nombre de personnes") +
+  guides(fill=guide_legend(title="Couleur")) +
+  scale_fill_manual(values = c("#8dd3c7", "#d38d8d")) 
+
 
 
 ### Modification du type de ligne
@@ -40,28 +43,13 @@ ggplot(data = personnages, aes(x = factor(nationality), fill = factor(gender))) 
   geom_bar() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   coord_flip() +
-  ggtitle("Who are these people?") +
-  xlab("Nationality") +
-  ylab("Number of people") +
-  scale_fill_manual(values = c("#8dd3c7", "#feffb3")) +
+  ggtitle("Qui sont les personnages ?") +
+  xlab("Nationalité") +
+  ylab("Nombre de personnes") +
+  guides(fill=guide_legend(title="Couleur")) +
+  scale_fill_manual(values = c("#8dd3c7", "#d38d8d")) +
   theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) +
   theme(panel.grid.major = element_line(colour = "grey50"))
-
-
-### Modification des axes
-ggplot(data = personnages, aes(x = factor(nationality), fill = factor(gender))) +
-  geom_bar() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  coord_flip() +
-  ggtitle("Who are these people?") +
-  xlab("Nationality") +
-  ylab("Number of people") +
-  scale_fill_manual(values = c("#8dd3c7", "#feffb3")) +
-  theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) +
-  theme(panel.grid.major = element_line(colour = "grey50")) +
-  theme(axis.text = element_text(face = "bold", colour = "darkgrey", size = 12, angle = 0, hjust = 0.5, vjust = 0.5))
-
-
 
 
 
