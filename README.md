@@ -4,7 +4,7 @@ Ce dossier Repository est lié au cours `L'essentiel de R`. Le cours entier est 
 
 ![Nom final de la formation][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
 
-DESCRIPTION DE LA FORMATION
+Les données permettent aux entreprises de prendre des décisions claires, de mieux comprendre leurs clients et de fournir une meilleure expérience globale. Dans ce domaine, le langage de programmation R reste la solution idéale pour analyser et visualiser ses données, en plus de faire de la data science. Dans ce cours, vous allez découvrir le langage R à travers d'exemples et tout en vous amusant. Vincent Terrasi, formateur en data science et conseils pour les entreprises, vous accompagne pour accélérer votre carrière, développer de nouvelles compétences et les appliquer directement dans vos projets data.
 
 ## Instructions
 
