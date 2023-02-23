@@ -27,7 +27,7 @@ Ce dossier Repository a des répertoires pour chacune des vidéos du cours.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-r
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/C560DAQFVVcDgCwlIfg/learning-public-crop_675_1200/0/1677158834916?e=2147483647&v=beta&t=QVUcrrG45m-zSn-Rt_mxMvJUGo7M7rtvL_iJhudx8pQ
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/vincent-terrasi
 
 [1]: # (End of FR-Instruction ###############################################################################################)
