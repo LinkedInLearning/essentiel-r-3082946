@@ -13,7 +13,11 @@
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "linkedinlearning.linkedinlearning-vscode-theme",
-        "reditorsupport.r"
+        "REditorSupport.r",
+        "ikuyadeu.r-lsp",
+        "yzhang.markdown-all-in-one",
+        "eamodio.gitlens",
+        "coenraads.bracket-pair-colorizer"
       ]
     }
   },
